@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "rootDir": ".",
+        "outDir": "build",
+        "removeComments": true,
+        "esModuleInterop": true
+    },
+    "include": ["src/**/*", "__tests__/**/*"],
+    "extends": "./tsconfig.paths.json"
+}
