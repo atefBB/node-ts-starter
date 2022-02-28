@@ -4,7 +4,7 @@
         "paths": {
             "@helpers/*": ["./helpers/*"],
             "@routes/*": ["./routes/*"],
-            "@constants/*": ["./constants/*"]
+            "@controllers/*": ["./controllers/*"]
         }
     }
 }
