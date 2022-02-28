@@ -1,7 +1,8 @@
 import express, { Request, Response, NextFunction } from "express";
 import { json } from "body-parser";
+import "module-alias/register";
 
-import indexRouter from "./routes/index";
+import indexRouter from "@routes/index";
 
 const app: express.Application = express();
 
