@@ -29,8 +29,8 @@
     },
     "scripts": {
         "start": "nodemon ./src/index.ts",
-        "build": "tsc -p tsconfig.release.json",
-        "build:watch": "tsc -w -p tsconfig.release.json",
+        "build": "tsc",
+        "build:watch": "tsc -w",
         "test": "jest --coverage",
         "test:watch": "jest --watch",
         "prepare": "husky install"
