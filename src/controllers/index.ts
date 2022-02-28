@@ -1,6 +1,5 @@
-import { RequestHandler } from "express";
+import { RequestHandler, Response } from "express";
 
-// @ts-ignore
-export const indexController: RequestHandler = (request, response) => {
+export const indexController: RequestHandler = (_, response: Response) => {
     response.send("Hola!");
 };
