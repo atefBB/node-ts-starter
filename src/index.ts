@@ -1,6 +1,7 @@
 import express, { Request, Response, NextFunction } from "express";
 import { json } from "body-parser";
 import "module-alias/register";
+import "dotenv/config";
 
 import indexRouter from "@routes/index";
 
@@ -23,8 +24,9 @@ app.use(
     }
 );
 
-const PORT = 5100;
+const HOST = process.env.HOST ?? "localhost";
+const PORT = process.env.PORT ?? 5100;
 
 app.listen(PORT, () =>
-    console.log(`Server listening on http://localhost:${PORT}`)
+    console.log(`Server listening on http://${HOST}:${PORT}`)
 );
