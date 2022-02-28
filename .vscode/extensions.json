@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "wix.vscode-import-cost",
+        "mhutchie.git-graph",
+        "ms-vsliveshare.vsliveshare",
+        "nicoespeon.abracadabra",
+        "pkief.material-icon-theme",
+        "letrieu.expand-region",
+        "ms-vscode.sublime-keybindings",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}
