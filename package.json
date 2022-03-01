@@ -47,9 +47,6 @@
     "lint-staged": {
         "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
     },
-    "volta": {
-        "node": "16.13.0"
-    },
     "_moduleAliases": {
         "@root": ".",
         "@routes": "src/routes",
