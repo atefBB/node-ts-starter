@@ -1,9 +1,9 @@
 {
-    "name": "node-typescript-boilerplate",
-    "version": "0.0.0",
-    "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+    "name": "node-typescript-starter",
+    "version": "0.0.1",
+    "description": "Minimalist starter to quick-start Node.js development in TypeScript.",
     "engines": {
-        "node": ">= 16.13 <17"
+        "node": ">= 14"
     },
     "devDependencies": {
         "@commitlint/cli": "^16.2.1",
