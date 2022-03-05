@@ -2,6 +2,7 @@
     "name": "node-typescript-starter",
     "version": "0.0.1",
     "description": "Minimalist starter to quick-start Node.js development in TypeScript.",
+    "main": "build/src/index.js",
     "engines": {
         "node": ">= 14"
     },
