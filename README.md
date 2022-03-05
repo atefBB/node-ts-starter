@@ -48,3 +48,7 @@ This is **optional**, but if you want to learn how to write JavaScript tests for
 ## License
 
 No License
+
+
+## Authors
+- [Atef Ben Ali](mailto:atef.bettaib@gmailcom)
