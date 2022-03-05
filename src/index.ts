@@ -1,11 +1,11 @@
-import express, { Request, Response, NextFunction } from "express";
+import express, { Request, Response, Application, NextFunction } from "express";
 import { json } from "body-parser";
 import "module-alias/register";
 import "dotenv/config";
 
 import indexRouter from "@routes/index";
 
-const app: express.Application = express();
+const app: Application = express();
 
 app.use(json());
 
