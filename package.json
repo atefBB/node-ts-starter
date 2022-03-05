@@ -29,7 +29,7 @@
     },
     "scripts": {
         "start": "nodemon ./src/index.ts",
-        "build": "tsc",
+        "build": "rm -fr build && tsc",
         "build:watch": "tsc -w",
         "test": "jest --coverage",
         "test:watch": "jest --watch",
