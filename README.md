@@ -51,4 +51,4 @@ No License
 
 
 ## Authors
-- [Atef Ben Ali](mailto:atef.bettaib@gmailcom)
+- [Atef Ben Ali](mailto:atef.bettaib@gmail.com)
