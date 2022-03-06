@@ -47,11 +47,5 @@
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
-    },
-    "_moduleAliases": {
-        "@root": ".",
-        "@routes": "src/routes",
-        "@controllers": "src/controllers",
-        "@helpers": "src/helpers"
     }
 }
