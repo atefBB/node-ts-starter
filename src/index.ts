@@ -1,7 +1,14 @@
 import express, { Request, Response, Application, NextFunction } from "express";
 import { json } from "body-parser";
-import "module-alias/register";
 import "dotenv/config";
+
+import moduleAlias from "module-alias";
+
+moduleAlias.addAliases({
+    "@routes": `${__dirname}/routes`,
+    "@controllers": `${__dirname}/controllers`,
+    "@helpers": `${__dirname}/helpers`,
+});
 
 import indexRouter from "@routes/index";
 
