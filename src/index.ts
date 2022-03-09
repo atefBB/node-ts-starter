@@ -1,5 +1,5 @@
-import express, { Request, Response, Application, NextFunction } from "express";
-import { json } from "body-parser";
+import express, { Application, json, urlencoded } from "express";
+
 import "dotenv/config";
 
 import "./modulesAliasConfig";
@@ -10,20 +10,12 @@ const app: Application = express();
 
 app.use(json());
 
-app.use("/", indexRouter);
+app.use(urlencoded({ extended: false }));
+registerRouter(app);
 
-app.use(
-    (
-        error: Error,
-        // @ts-ignore
-        request: Request,
-        response: Response,
-        // @ts-ignore
-        next: NextFunction
-    ) => {
-        response.status(500).json({ message: error.message });
-    }
-);
+app.use(cors());
+app.use(urlencoded({ extended: false }));
+registerRouter(app);
 
 const HOST = process.env.HOST ?? "localhost";
 const PORT = process.env.PORT ?? 5100;
