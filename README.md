@@ -11,6 +11,7 @@ Starter app with those tools included and configured:
 -   [Husky](https://typicode.github.io/husky) for git hooks
 -   [Commitlint](https://commitlint.js.org) Lint commit messages to respect [Conventional Commits spec](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 -   [Yarn](https://yarnpkg.com/) Package manager
+-   [Swagger](https://swagger.io/) For Api documentation (see [swagger](#swagger) section).
 -   NPM [scripts](#available-scripts) for common operations
 -   Simple example of TypeScript code and unit test
 -   .editorconfig for consistent file format
@@ -94,11 +95,40 @@ We are trying to respect those **rules**:
 
 ### Api data schema
 
-coming soon.
+See [Swagger](#swagger) section.
 
 ### Commits Rules
 
 We use [conventional commits](https://www.conventionalcommits.org/en/) rules for commits. Please use `git cz` which help you to respect those conventions (see [this link](https://github.com/streamich/git-cz) for installation and mre info about it).
+
+## Swagger
+
+### Installation
+
+```sh
+yarn add swagger-jsdoc swagger-ui-express
+```
+
+### Paths
+
+The paths section defines individual endpoints (paths) in your API, and the HTTP methods (operations) supported by these endpoints. For example, GET /users can be described as:
+![swagger-path](./src/assets/images/paths.png)
+
+More info: [Paths and Operations](https://swagger.io/docs/specification/2-0/paths-and-operations/).
+
+### Parameters
+
+Operations can have parameters that can be passed via URL path (/users/{userId}), query string (/users?role=admin), headers (X-CustomHeader: Value) and request body. You can define the parameter types, format, whether they are required or optional, and other details:
+
+![swagger-Parameters](./src/assets/images/parameters.png)
+More info: [Describing Parameters](https://swagger.io/docs/specification/2-0/describing-parameters/).
+
+### Responses
+
+For each operation, you can define possible status codes, such as 200 OK or 404 Not Found, and schema of the response body. Schemas can be defined inline or referenced from an external definition via $ref. You can also provide example responses for different content types.
+
+![swagger-Responses](./src/assets/images/response.png)
+More info: [Describing Responses](https://swagger.io/docs/specification/2-0/describing-responses/).
 
 ## Available Scripts
 
