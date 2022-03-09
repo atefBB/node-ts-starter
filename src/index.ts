@@ -2,15 +2,9 @@ import express, { Request, Response, Application, NextFunction } from "express";
 import { json } from "body-parser";
 import "dotenv/config";
 
-import moduleAlias from "module-alias";
+import "./modulesAliasConfig";
 
-moduleAlias.addAliases({
-    "@routes": `${__dirname}/routes`,
-    "@controllers": `${__dirname}/controllers`,
-    "@helpers": `${__dirname}/helpers`,
-});
-
-import indexRouter from "@routes/index";
+import registerRouter from "@routes/index";
 
 const app: Application = express();
 
