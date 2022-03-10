@@ -1,4 +1,7 @@
-import { Router } from "express";
+import path from "path";
+import { Application } from "express";
+import swaggerJsDoc from "swagger-jsdoc";
+import swaggerUI from "swagger-ui-express";
 
 import { PORT, HOST } from "@root";
 
