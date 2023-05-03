@@ -18,7 +18,7 @@ Starter app with those tools included and configured:
 
 ## Getting Started
 
-This project is intended to be used with the latest Active LTS release of [Node.js][nodejs].
+This project is intended to be used with the latest Active LTS release of [Node.js](https://nodejs.org).
 
 ### Clone repository
 
