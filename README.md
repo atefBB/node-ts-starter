@@ -93,10 +93,6 @@ We are trying to respect those **rules**:
 -   Use `typescript basic types` as possible as you can (see [this link](https://www.typescriptlang.org/docs/handbook/basic-types.html) for more info).
 -   Don't go crazy with your types (and don't lose your mind meanwhile!).
 
-### Api data schema
-
-See [Swagger](#swagger) section.
-
 ### Commits Rules
 
 We use [conventional commits](https://www.conventionalcommits.org/en/) rules for commits. Please use `git cz` which help you to respect those conventions (see [this link](https://github.com/streamich/git-cz) for installation and mre info about it).
