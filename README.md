@@ -14,7 +14,7 @@ Starter app with those tools included and configured:
 -   [Swagger](https://swagger.io/) For Api documentation (see [swagger](#swagger) section).
 -   NPM [scripts](#available-scripts) for common operations
 -   Simple example of TypeScript code and unit test
--   .editorconfig for consistent file format
+-   `.editorconfig` for consistent file format
 
 ## Getting Started
 
