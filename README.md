@@ -146,6 +146,11 @@ Writing unit tests in TypeScript can sometimes be troublesome and confusing. Esp
 
 This is **optional**, but if you want to learn how to write JavaScript tests for TypeScript modules, read this [wiki page][https://github.com/jsynowiec/node-typescript-boilerplate/wiki/unit-tests-in-plain-javascript].
 
+## TODO
+
+-   Add `knexjs` integration
+-   Add `unit tests` boilerplate
+
 ## License
 
 No License
