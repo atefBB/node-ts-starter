@@ -1,8 +1,9 @@
-import moduleAlias from "module-alias";
+import { addAliases } from "module-alias";
+import { resolve } from "path";
 
-moduleAlias.addAliases({
-    "@root": __dirname,
-    "@routes": `${__dirname}/routes`,
-    "@controllers": `${__dirname}/controllers`,
-    "@helpers": `${__dirname}/helpers`,
+addAliases({
+    "@root": resolve(__dirname, ""),
+    "@routes": resolve(__dirname, "routes"),
+    "@controllers": resolve(__dirname, "controllers"),
+    "@helpers": resolve(__dirname, "helpers"),
 });
