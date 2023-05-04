@@ -1,10 +1,10 @@
-import express, { Application, json, urlencoded } from "express";
-import "dotenv/config";
 import cors from "cors";
+import "dotenv/config";
+import express, { Application, json, urlencoded } from "express";
+import "module-alias/register";
 
 import "./modulesAliasConfig";
-
-import registerRouter from "@routes/index";
+import registerRouter from "./routes/index";
 
 const app: Application = express();
 
